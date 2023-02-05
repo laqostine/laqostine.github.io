@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <div>
+      <div class="aboutme ">
+        <h1  style="font-size: 100px;">Selamlar, ben bera.</h1>
+        <h3 >Nasılsınız?</h3>
+      </div>
+
+    </div>
+    <script>
+    </script>
+    <style>
+      .image {
+        width: 500;
+      }
+      .aboutme {
+        
+        margin-top: 120px;
+        text-align: center;
+        position: relative;
+      animation: levitate 2s infinite ease-in-out;
+       text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.2);
+
+   
+}
+    .aboutme:hover {  
+      animation: rainbow 5s infinite linear;
+
+    }
+
+@keyframes rainbow {
+  0% {
+    color: rgb(255, 100, 100);
+    transform: translateY(0);
+  }
+  20% {
+    color: orange;
+  }
+  40% {
+    color: rgb(255, 255, 73);
+     transform: translateY(-20px);
+  }
+  60% {
+    color: rgb(126, 255, 126);
+  }
+  80% {
+    color: rgb(155, 155, 255);
+    transform: translateY(20px);
+  }
+  100% {
+    color: rgb(255, 77, 255);
+    transform: translateY(0)
+}
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+    </style>
+</body>
+</html>
+{% endblock %}
+
+

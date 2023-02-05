@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="content-container">
+    <div class="content-item"></div>
+
+
+</div>
+<h3> makaleler </h3>
+{% if articles %}
+<form action ="/search" method ="post">
+    <input class="form-control form-control-lg form-control-borderless" name = "keyword" type="search" placeholder="Ara">
+</form>
+<ul class="list-group">
+    {% for article in articles%}
+    <li class="list-group-item"> <a href="article/{{article.id}}">{{article.title}}</a></li>
+
+    {% endfor %}
+</ul>
+{% else %}
+<div class = "alert alert-danger">Burada Makale Yayınlanmamış!</div>
+{% endif %}
+{% endblock body %}
+
+
