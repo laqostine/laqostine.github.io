@@ -1,0 +1,54 @@
+
+.navbar-nav:hover {
+    animation: levitate 2s infinite ease-in-out;
+    padding: 5px;
+    padding-top: 15px;
+  }
+  
+    .nav-item  .nav-link:hover {
+    color: #bfbfc0 !important;
+    
+    }
+    .dropdown-item:hover {
+    color: #b0b0b0 !important;
+  }
+  .dropdown-item{
+    color: #ffffff;
+  } 
+  
+  
+  .nav-item .dropdown-menu {
+    background-color: rgb(27, 27, 27);
+  }
+  .nav-item  .nav-link {
+    padding: 2px;
+    font-size: 30px;
+    margin: 10px;
+    color: #ffffff !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+  .navbar-brand 
+  {
+    color: #ffffff !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  .navbar {
+    background-color: rgb(27, 27, 27);
+  }
+  
+  .nav-link {
+    text-align: left;
+  }
+  body {
+    background-color: rgb(27, 27, 27);
+  }
+  h1 {
+    color: white;
+  }
+.a:hover {
+  text-decoration: none;
+  color: white;
+}

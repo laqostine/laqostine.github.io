@@ -40,38 +40,44 @@
   </head>
   <body>
       <div>
-      <div class="aboutme">
-        <img class="aboutimg" src="download.jpeg" alt="">
-        <h1  style="font-size: 70px;">Hey! I'm bera.</h1>
-        <h3 id="a-bout" style="font-size: 25px;">I'm a highschool student in İstanbul. I'm interested in philosophy, technology and football. I'm 15 years old and
-           I've been Coding since last year.  You can click  <a href="projects.html">here</a> if you want to see my projects. </h3>
-      </div>
+        <div class="content">
+            <div class="item item-1">Nautilus</div>
+            <div class="item item-3">AI</div>
+            <div class="item item-3">Website</div>
+        </div>
+
       
     
   </body>
 
-
-    </div>
-    <script>
-    </script>
-    <style>
-      .aboutimg {
-        border-radius: 50%;
-        width: 350px;
-      }
-      a {
-        text-decoration: none;
-        text-shadow: none;
-        color: white;
-      }
-      .image {
-        width: 500;
-      }
-      #a-bout {
+</div>
+<style>
+      .item {
+        width: 250px;
+        height: 250px;
+        border: 5cm;
+        border-color: rgb(0, 0, 0);
+        background-color: white;
+        padding: 10px;
+        margin-left: 30px;
+        margin-top: 20px;
+        border-radius: 20%;
         text-align: center;
-        width: 900px;
-        margin-left:320px;
+        
       }
+      .content{
+        width: 80%;
+        height: 630px;
+        border-color: white;
+        margin: auto;
+        margin-top: 100px;
+        border: 10px solid;
+        padding: 10px;
+        display:flex ;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+             }
       .aboutme {
         
         margin-top: 150px;
@@ -82,58 +88,9 @@
        color: white;
        
     }
-   
-
-    .aboutme:hover {  
-      animation: rainbow 5s infinite linear;
-
-    }
-    .body {
-      background-image: url('matrix.jpg');
-    }
-
-@keyframes rainbow {
-  0% {
-    color: rgb(255, 100, 100);
-    transform: translateY(0);
-  }
-  20% {
-    color: orange;
-    transform: translateY(-20px);
-  }
-  40% {
-    color: rgb(255, 255, 73);
-     transform: translateY(-20px);
-  }
-  60% {
-    color: rgb(126, 255, 126);
-    transform: translateY(-20px);
-    }
-  80% {
-    color: rgb(155, 155, 255);
-    transform: translateY(20px);
-  }
-  100% {
-    color: rgb(255, 77, 255);
-    transform: translateY(0)
-}
-}
-
-@keyframes levitate {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.body {
-  animation: falling-numbers 1s ease-in-out infinite;
-}
-
-    </style>
-</body>
-</html>
+    #a-bout {
+        text-align: center;
+        width: 900px;
+        margin-left:320px;
+      }
+</style>
