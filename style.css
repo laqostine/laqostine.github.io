@@ -1,27 +1,16 @@
 
-.navbar-nav:hover {
-    animation: levitate 2s infinite ease-in-out;
-    padding: 5px;
-    padding-top: 15px;
+
+  .dropdown-item {
+    color: white;
   }
   
-    .nav-item  .nav-link:hover {
-    color: #bfbfc0 !important;
-    
-    }
-    .dropdown-item:hover {
-    color: #b0b0b0 !important;
-  }
-  .dropdown-item{
-    color: #ffffff;
-  } 
-  
-  
-  .nav-item .dropdown-menu {
-    background-color: rgb(27, 27, 27);
+  .nav-item .dropdown-menu{
+    background-color: transparent;
+    color: white;
   }
   .nav-item  .nav-link {
-    padding: 2px;
+
+    padding: 10px;
     font-size: 30px;
     margin: 10px;
     color: #ffffff !important;
@@ -35,15 +24,13 @@
   }
   
   
-  .navbar {
-    background-color: rgb(27, 27, 27);
-  }
+ 
   
   .nav-link {
     text-align: left;
   }
   body {
-    background-color: rgb(27, 27, 27);
+    background: linear-gradient(to bottom, rgb(47, 5, 105), rgb(12, 2, 36));
   }
   h1 {
     color: white;

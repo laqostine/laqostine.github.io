@@ -19,16 +19,12 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-left" href="about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link " href="about.html" >
           About
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="mystory">My Projects</a>
-          <a class="dropdown-item" href="skills">My Skills</a>
-        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact">Contact</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </li>
     </ul>
 </nav> 
@@ -44,7 +40,7 @@
         <img class="aboutimg" src="download.jpeg" alt="">
         <h1  style="font-size: 70px;">Hey! I'm bera.</h1>
         <h3 id="a-bout" style="font-size: 25px;">I'm a highschool student in İstanbul. I'm interested in philosophy, technology and football. I'm 15 years old and
-           I've been Coding since last year.  You can click  <a href="projects.html">here</a> if you want to see my projects. </h3>
+           I've been Coding since last year.  You can click  <a class="aboutme" href="projects.html">here</a> if you want know more about me. </h3>
       </div>
       
     
@@ -62,7 +58,12 @@
       a {
         text-decoration: none;
         text-shadow: none;
-        color: white;
+        
+        animation: rainbow 5s infinite linear;
+
+      }
+      a:hover {
+        text-decoration: none;
       }
       .image {
         width: 500;
