@@ -6,7 +6,7 @@
 <!-- Bootstrap JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-<nav class="navbar navbar-expand-lg  fixed-top ">
+<nav class="navbar navbar-expand-lg">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,80 +19,79 @@
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link " href="about.html" >
+        <a class="nav-link dropdown-toggle text-left" href="about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           About
         </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="mystory">My Projects</a>
+          <a class="dropdown-item" href="skills">My Skills</a>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="contact">Contact</a>
       </li>
     </ul>
 </nav> 
 <!DOCTYPE html>
 <html lang="tr">
 <head> 
-  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-      <div>
-        <div class="content">
-          <h1 class="item item-1">Who am I?</h1>
-          <p style="width: 500px; font-size: 20px;" class="item item-2">I'm bera. I like coding. I'm interested in AI Technologies,Cyber Security, Web Development and Under Water Robots.
-          Here is my <a href="https://github.com/laqostine">Github.</a> You can see some of my projects there. </p>
-          <h1 class="item item-3" style="margin-top: 150px;">My Account's</h1>
+    <div>
+      <div class="content">
+        <h1 class="item item-1">Who am I?</h1>
+        <p class="item item-2">I'm bera. I like coding. I'm interested in AI Technologies,Cyber Security, Web Development and Under Water Robots.
+          Here is my <a href="https://github.com/laqostine">Github.</a> You can see some of my projects there.
+        </p>
+        <h1 class="item item-3">My Account's</h1>
+        <ul>
           <li>
-            <p style="width: 500px; font-size: 20px;" class="item item-4"><a style="color:white" href="https://www.tiktok.com/@dogruyuarayanadam">1 - @dogruyuarayanadam</a> tiktok.</p>
-            <p style="width: 500px; font-size: 20px;" class="item item-4"><a style="color:white" href="https://www.instagram.com/dogruyuarayanadam/">2 - @dogruyuarayanadam</a> instagram.</p>
-            <p style="width: 500px; font-size: 20px;" class="item item-4"><a style="color:white" href="https://www.youtube.com/@intelligenttalks">3 - @intelligenttalks</a> youtube.</p>
-            
+            <p class="item item-4"><a style="color:white" href="https://www.tiktok.com/@dogruyuarayanadam">1 - @dogruyuarayanadam</a> tiktok.</p>
+            <p class="item item-4"><a style="color:white" href="https://www.instagram.com/dogruyuarayanadam/">2 - @dogruyuarayanadam</a> instagram.</p>
+            <p class="item item-4"><a style="color:white" href="https://www.youtube.com/@intelligenttalks">3 - @intelligenttalks</a> youtube.</p>
           </li>
-        
-        </div>
-
-      
-    
+        </ul>
+      </div>
+    </div>
   </body>
-
-</div>
-<style>
-      .item {
-        width: 300px;
-        height: 30px;
-        border: 5cm;
-        border-color: rgb(255, 255, 255);
-        padding: 10px;
-        color: white;
-        margin-left: 30px;
-        margin-top: 20px;
-        border-radius: 20%;
-        
-      }
-      .content{
-        width: 80%;
-        height: 630px;
-        margin-left: 100px;
-        margin-top: 100px;
-        border: 10px solid;
-        padding: 10px;
-        display:flex;
-        justify-content:left;
-        flex-direction: column;
-        flex-wrap: wrap;
-        border-color: transparent !important;
-             }
-      .aboutme {
-        
-        margin-top: 150px;
-        text-align: center;
-        position: relative;
-      animation: levitate 2s infinite ease-in-out;
-       color: white;
-       
+  
+  <style>
+    .item {
+      height: 30px;
+      width: 1200px;
+      padding-top: 30px;
+      color: white;
+      margin-top: 20px;
+      border-radius: 20%;
+      font-size: 30px;
+      margin-top: 50px;
     }
-    #a-bout {
-        text-align: center;
-        width: 900px;
-        margin-left:320px;
+    .content {
+      height: 630px;
+      margin-left: 50px;
+      padding: 10px;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    /* Mobile styles */
+    @media screen and (max-width: 576px) {
+      .item {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10%;
+        font-size: 14px;
       }
+      .content {
+        margin-top: 60px;
+        padding: 5px;
+      }
+    }
+  </style>
+  
 </style>
