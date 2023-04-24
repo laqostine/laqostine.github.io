@@ -292,10 +292,40 @@
     </div>
     <!--  Blog Single Modal End  -->
 
-
-    <?php
-include("header.html");
-?>
+    <header id="header" class="header fixed-top">
+        <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand font-weight-bold" href="#hero">Be<span class="base-color">ra</span></a>
+                <!--  Navbar Toggler Button Start -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="lni-menu size-md"></span>
+                </button>
+                <!--  Navbar Toggler Button End -->
+                <div class="collapse navbar-collapse" id="toggle-menu">
+                    <ul class="navbar-nav nav-pills ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+        
+      
+                    </ul>
+                    <ul class="list-inline socails mt-4  d-lg-none">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
     <!--  Hero Start  -->
     <section id="hero" class="section hero hero-03 full-screen p-0">
         <div class="hero-content">
@@ -981,7 +1011,11 @@ include("header.html");
         </div>
     </div>
     <!-- End Options -->
-    <?php include 'footer.html'; ?>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2023 - MyWebsite.com. All rights reserved.</p>
+        <p>Website designed by <a href="#" style="color: #ff6b6b; text-decoration: none;">Ensar Bera</a></p>
+        <p>Follow us on <a href="#" style="color: #ff6b6b; text-decoration: none;">Twitter</a> <a href="https://twitter.com/beravichosen" style="color: #ff6b6b; text-decoration: none;"></a> for the latest updates!</p>
+      </footer>
     <!--  JavaScripts  -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.4.1.min.js"></script>
     <!--  Bootstrap Js  -->
