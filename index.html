@@ -3,191 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fertilizer Products</title>
+<title>Modern Fertilizer Products</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-	    body {
+    body {
+        font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
         overflow-x: hidden; /* Prevent horizontal scroll */
-        font-family: 'Roboto', sans-serif;
- 
     }
+
     .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 10;
-}
-
-.navbar .logo {
-    display: flex;
-    align-items: center;
-}
-
-.navbar .logo img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-.navbar .menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar .menu li {
-    margin-left: 20px;
-}
-
-.navbar .menu li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.navbar .menu li a:hover {
-    color: green;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px;
-    transition: 0.4s;
-}
-
-.header {
-    background-image: linear-gradient(rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)), url('img/fertilizers.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px 10px;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-    .container {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-    }
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-        width: 400px;
-        margin: 50px;
-        padding: 20px;
-    }
-    .card img {
-        width: 100%;
-    }
-    .card-content a:hover {
-        color: greenyellow;
-    }
-    .container .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-    .card-content {
-        padding: 16px;
-        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 10;
+        color: white;
     }
 
-    /* Responsive styles */
-    @media screen and (max-width: 768px) {
-        .navbar {
-        padding: 10px; /* Reduced padding for smaller screens */
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .logo img {
+        height: 50px;
+        margin-right: 10px;
     }
 
     .navbar .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #fff;
-        position: absolute;
-        top: 60px; /* Adjust to fit below the navbar */
-        left: 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 9; /* Ensure it sits on top of other content */
-    }
-
-    .navbar .menu.active {
+        list-style: none;
         display: flex;
+        margin: 0;
+        padding: 0;
     }
 
     .navbar .menu li {
-        margin: 10px 0;
-        text-align: center;
+        margin-left: 20px;
+    }
+
+    .navbar .menu li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .navbar .menu li a:hover {
+        color: green;
     }
 
     .hamburger {
-        display: flex;
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
     }
 
     .hamburger div {
-        width: 25px; /* Ensure the hamburger menu is not too wide */
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 4px;
+        transition: 0.4s;
     }
 
-    .header {
-        background-image: none; /* Remove background image on mobile */
-        background-color: green; /* Use a solid color */
-        padding: 20px;
+    .hero {
+        background-image: linear-gradient(rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)), url('img/fertilizers.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 30px;
+        text-align: center;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .hero .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .hero .cta-button:hover {
+        background-color: #006400;
+    }
+
+    .products-section {
+        padding: 50px 30px;
         text-align: center;
     }
 
-    .header h1 {
-        font-size: 20px; /* Adjust font size for mobile */
+    .products-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
     }
 
-    .product-details {
-        flex-direction: column;
-        align-items: center; /* Center content in column layout */
-        padding: 10px; /* Adjust padding for mobile */
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
     }
 
-    .product-details .text {
-        max-width: 100%;
-        text-align: center; /* Center text on mobile */
-        margin: 0; /* Remove margin on mobile */
+    .product-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
     }
 
-    .product-details img {
-        margin-left: 0; /* Remove margin on mobile */
-        margin-top: 20px; /* Add space above image */
+    .product-card:hover {
+        transform: translateY(-10px);
     }
 
-    .product-details .buttons {
-        text-align: center; /* Center buttons on mobile */
+    .product-card img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
-    .product-details .button {
-        width: 90%; /* Make buttons full width on mobile */
-        margin-bottom: 10px; /* Add space between buttons */
+    .product-card h3 {
+        font-size: 20px;
+        margin: 15px 0 5px;
     }
-}
-.footer {
+
+    .product-card p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .product-card .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #008000;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .product-card .button:hover {
+        background-color: #006400;
+    }
+
+    .footer {
         background-color: #333;
         color: white;
         text-align: center;
-        padding: 0px;
+        padding: 30px 0;
         position: relative;
         width: 100%;
     }
@@ -196,12 +180,8 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding: 10px 20px;
+        padding: 20px 30px;
         text-align: left;
-    }
-
-    .footer .footer-content div {
-
     }
 
     .footer a {
@@ -211,6 +191,111 @@
 
     .footer a:hover {
         text-decoration: underline;
+    }
+
+    .footer .newsletter {
+        margin-top: 20px;
+    }
+
+    .footer .newsletter input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .footer .newsletter button {
+        padding: 10px 20px;
+        background-color: #008000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .footer .newsletter button:hover {
+        background-color: #006400;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+        .navbar {
+            padding: 10px; /* Reduced padding for smaller screens */
+        }
+
+        .navbar .menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #fff;
+            position: absolute;
+            top: 60px; /* Adjust to fit below the navbar */
+            left: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 9; /* Ensure it sits on top of other content */
+        }
+
+        .navbar .menu.active {
+            display: flex;
+        }
+
+        .navbar .menu li {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+
+        .hamburger div {
+            width: 25px; /* Ensure the hamburger menu is not too wide */
+        }
+
+        .header {
+            background-image: none; /* Remove background image on mobile */
+            background-color: green; /* Use a solid color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 20px; /* Adjust font size for mobile */
+        }
+
+        .product-details {
+            flex-direction: column;
+            align-items: center; /* Center content in column layout */
+            padding: 10px; /* Adjust padding for mobile */
+        }
+
+        .product-details img {
+            padding-top: 0;
+            width: 280px;
+            height: auto;
+            margin-bottom: 0;
+            margin-left: 0; /* Remove margin on mobile * /* Add space below image */
+        }
+
+        .product-details .text {
+            max-width: 100%;
+            text-align: center; /* Center text on mobile */
+            margin: 0; /* Remove margin on mobile */
+        }
+
+        .product-details .buttons {
+            text-align: center; /* Center buttons on mobile */
+        }
+
+        .product-details .button {
+            width: 90%; /* Make buttons full width on mobile */
+            margin-bottom: 10px; /* Add space between buttons */
+        }
+
+        .breadcrumbs {
+            text-align: center;
+            padding: 10px 15px; /* Adjust padding for mobile */
+        }
     }
 </style>
 </head>
@@ -222,9 +307,8 @@
         <img src="img/ANFAFERT.png" alt="AnfaFert Logo">
     </div>
     <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="dap.html" style="color: green;">Products</a></li>
-     
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" style="color: green;">Products</a></li>
     </ul>
     <div class="hamburger" onclick="toggleMenu()">
         <div></div>
@@ -233,97 +317,84 @@
     </div>
 </div>
 
-<div class="header">
-    <h1>Products</h1>
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Discover Our Premium Fertilizers</h1>
+    <p>High-quality fertilizers to boost your crop yield and enhance soil health.</p>
+    <a href="products.html" class="cta-button">Explore Products</a>
 </div>
-<!-- Product Cards -->
 
-    <!-- Organic Fertilizers -->
-
-    <div class="container">
-        <!-- DAP -->
-        <div class="card">
+<!-- Products Section -->
+<div class="products-section">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+        <div class="product-card">
             <img src="img/dap.jpg" alt="DAP (18.46.0)">
-            <div class="card-content">
-                <a style="text-decoration: none; color: black; " href="dap.html"><h4>DAP (18.46.0)</h4></a>
-                <p>Granular Fertilizer</p>
-            </div>
+            <h3>DAP (18.46.0)</h3>
+            <p>Granular Fertilizer</p>
+            <a href="dap.html" class="button">Learn More</a>
         </div>
-    
-        <!-- MAP -->
-        <div class="card">
+        <div class="product-card">
+            <img src="img/urea.jpg" alt="DAP (18.46.0)">
+            <h3>Ure (%46)</h3>
+            <p>Granular Fertilizer</p>
+            <a href="ure.html" class="button">Learn More</a>
+        </div>
+        <div class="product-card">
+            <img src="img/npk.png" alt="DAP (18.46.0)">
+            <h3>NPK</h3>
+            <p>Granular Fertilizer</p>
+            <a href="npk.html" class="button">Learn More</a>
+        </div>
+        <div class="product-card">
+            <img src="img/tspp.png" alt="DAP (18.46.0)">
+            <h3>TSP</h3>
+            <p>Granular Fertilizer</p>
+            <a href="tsp.html" class="button">Learn More</a>
+        </div>
+        <div class="product-card">
             <img src="img/map.jpg" alt="MAP (12.61.0)">
-            <div class="card-content">
-                <h4>MAP (12.61.0)</h4>
-                <p>Speciality Fertilizer</p>
-            </div>
+            <h3>MAP (12.61.0)</h3>
+            <p>Speciality Fertilizer</p>
+            <a href="map.html" class="button">Learn More</a>
         </div>
-    
-  
-  <div class="card">
-            <img src="img/tspp.png" alt="TSP (Triple Super Phosphate)">
-            <div class="card-content">
-                <h4>TSP (Triple Super Phosphate)</h4>
-                <p>Speciality Fertilizer</p>
-            </div>
-        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+</div>
 
-        <!-- Urea 46 -->
-        <div class="card">
-            <img src="img/urea.jpg" alt="Urea (46%)">
-            <div class="card-content">
-                <h4>Urea (46%)</h4>
-                <p>Granular Fertilizer</p>
-            </div>
-        </div>
- 
-			
-		<div class="card">
-			<img src="img/mkp.jpg" alt="MKP (0.52.34)">
-			<div class="card-content">
-				<h4>MKP (0.52.34)</h4>
-				<p>Speciality Fertilizer</p>
-			</div>
-		</div>
-
-		<!-- Organic Fertilizers -->
-		 
-		<div class="card">
-			<img src="img/npk.png" alt="Amino Acid">
-			<div class="card-content">
-				<h4>NPK</h4>
-			</div>
-		</div>
-		
-    <!-- Add more product cards here -->
+<!-- Footer -->
 <div class="footer">
-		<div class="footer-content">
-			<div>
-				<h3>About Us</h3>
-				<p>We are a leading fertilizer company dedicated to providing high-quality fertilizers for all your agricultural needs.</p>
-			</div>
-			<div>
-				<h3>Contact</h3>
-				<p><a href="tel:+902129162245">+90 212 916 22 45</a></p>
-				<p><a href="mailto:info@anfafert.com">info@anfafert.com</a></p>
-			</div>
-			<div>
-				<h3>Follow Us</h3>
-				<p><a href="#">Facebook</a></p>
-				<p><a href="#">Twitter</a></p>
-				<p><a href="#">Instagram</a></p>
-			</div>
-		</div>
-		<p>&copy; 2024 AnfaFert. All rights reserved.</p>
-	</div>
-	
-	<script>
-		function toggleMenu() {
-			const menu = document.querySelector('.navbar .menu');
-			menu.classList.toggle('active');
-		}
-	</script>
-	
+    <div class="footer-content">
+        <div>
+            <h3>About Us</h3>
+            <p>We are a leading fertilizer company dedicated to providing high-quality fertilizers for all your agricultural needs.</p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p><a href="tel:+902129162245">+90 212 916 22 45</a></p>
+            <p><a href="mailto:info@anfafert.com">info@anfafert.com</a></p>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <p>&copy; 2024 AnfaFert. All rights reserved.</p>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.navbar .menu');
+        menu.classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>

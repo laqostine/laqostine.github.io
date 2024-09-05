@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSP Fertilizer</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(rgba(11, 39, 11, 0.7), rgba(6, 63, 6, 0.7));
+        color: #333;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 10;
+        color: white;
+    }
+
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .navbar .menu {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar .menu li {
+        margin-left: 20px;
+    }
+
+    .navbar .menu li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .navbar .menu li a:hover {
+        color: green;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 4px;
+        transition: 0.4s;
+    }
+
+    .product-details {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .product-details .text {
+        color: white;
+        flex: 1;
+        padding: 60px;
+        max-width: 50%;
+        box-sizing: border-box;
+    }
+
+    .product-details img {
+        width: 450px;
+        height: auto;
+        box-sizing: border-box;
+        margin-left: 150px; /* Space between text and image */
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+        .navbar {
+            padding: 10px; /* Reduced padding for smaller screens */
+        }
+
+        .navbar .menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #fff;
+            position: absolute;
+            top: 60px; /* Adjust to fit below the navbar */
+            left: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 9; /* Ensure it sits on top of other content */
+        }
+
+        .navbar .menu.active {
+            display: flex;
+        }
+
+        .navbar .menu li {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+
+        .hamburger div {
+            width: 25px; /* Ensure the hamburger menu is not too wide */
+        }
+
+        .product-details {
+            flex-direction: column;
+            align-items: center; /* Center content in column layout */
+            padding: 10px; /* Adjust padding for mobile */
+        }
+
+        .product-details img {
+            width: 280px;
+            margin-bottom: 20px; /* Add space below image */
+            margin-left: 0; /* Remove margin on mobile */
+        }
+
+        .product-details .text {
+            max-width: 100%;
+            text-align: center; /* Center text on mobile */
+            margin: 0; /* Remove margin on mobile */
+        }
+    }
+
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .footer .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .footer .footer-content div {
+        margin: 10px;
+        flex: 1;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">
+        <img src="img/ANFAFERT.png" alt="AnfaFert Logo">
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" style="color: green;">Products</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<!-- Product Details -->
+<div class="product-details">
+    <img src="tsp.png" alt="TSP (Triple Super Phosphate)">
+    <div class="text">
+        <h2>Triple Super Phosphate (TSP)</h2>
+        <p>With the highest phosphate content of any granular fertilizer without nitrogen, Triple super phosphate (TSP) dissolves rapidly to help plants thrive quickly, especially if they have high sulphur needs. It has a pH of 3 and is comprised of 46% phosphorus.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <div>
+            <h3>About Us</h3>
+            <p>We are a leading fertilizer company dedicated to providing high-quality fertilizers for all your agricultural needs.</p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p><a href="tel:+902129162245">+90 212 916 22 45</a></p>
+            <p><a href="mailto:info@anfafert.com">info@anfafert.com</a></p>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+        </div>
+    </div>
+    <p>&copy; 2024 AnfaFert. All rights reserved.</p>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.navbar .menu');
+        menu.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
