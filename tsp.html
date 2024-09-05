@@ -97,6 +97,57 @@
         margin-top: 80px;
     }
 
+    .product-details .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .product-details .button:hover {
+        background-color: darkgreen;
+    }
+
+    .packaging-options {
+        padding: 20px 60px;
+        background-color: rgba(0, 0, 0, 0.278);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .packaging {
+        text-align: center;
+        margin: 20px;
+        flex: 1;
+    }
+
+    .packaging img {
+        width: 200px; /* Larger images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .packaging h3 {
+        color: white;
+        margin: 10px 0 5px; /* Margin around title */
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .packaging p {
+        color: white;
+        margin: 0;
+        font-size: 14px;
+    }
+
     /* Responsive styles */
     @media screen and (max-width: 768px) {
         .navbar {
@@ -148,6 +199,19 @@
             max-width: 100%;
             text-align: center; /* Center text on mobile */
             margin: 0; /* Remove margin on mobile */
+        }
+
+        .packaging-options {
+            padding: 20px;
+            flex-direction: column; /* Stack items vertically on mobile */
+        }
+
+        .packaging {
+            margin: 10px 0;
+        }
+
+        .packaging img {
+            width: 150px; /* Slightly smaller images on mobile */
         }
     }
 
@@ -203,10 +267,31 @@
 
 <!-- Product Details -->
 <div class="product-details">
-    <img src="tsp.png" alt="TSP (Triple Super Phosphate)">
+    <img src="img/tsp.png" alt="TSP (Triple Super Phosphate)">
     <div class="text">
         <h2>Triple Super Phosphate (TSP)</h2>
         <p>With the highest phosphate content of any granular fertilizer without nitrogen, Triple super phosphate (TSP) dissolves rapidly to help plants thrive quickly, especially if they have high sulphur needs. It has a pH of 3 and is comprised of 46% phosphorus.</p>
+        <!-- Datasheet Button -->
+        <a href="tsp-datasheet.pdf" class="button" download>Download Datasheet</a>
+    </div>
+</div>
+
+<!-- Packaging Options Section -->
+<div class="packaging-options">
+    <div class="packaging">
+        <img src="img/cuval.png" alt="50 kg Bag">
+        <h3>50 kg Bag</h3>
+        <p>Ideal for small-scale applications and home gardens.</p>
+    </div>
+    <div class="packaging">
+        <img src="img/bigbag.png" alt="500 kg Big Bag">
+        <h3>500 kg Big Bag</h3>
+        <p>Suitable for medium-scale agricultural use and larger farms.</p>
+    </div>
+    <div class="packaging">
+        <img src="img/bigbag.png" alt="1000 kg Big Bag">
+        <h3>1000 kg Big Bag</h3>
+        <p>Best for bulk usage in extensive agricultural operations.</p>
     </div>
 </div>
 

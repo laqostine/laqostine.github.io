@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DAP Fertilizer</title>
+<title>MAP Fertilizer</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
     body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
-        background-image: linear-gradient(rgba(0, 64, 0, 0.642), rgb(0, 61, 0), rgb(0, 61, 0));
+        background-image: linear-gradient(rgba(11, 39, 11, 0.7), rgba(6, 63, 6, 0.7));
         color: #333;
         overflow-x: hidden; /* Prevent horizontal scroll */
     }
@@ -71,47 +71,6 @@
         transition: 0.4s;
     }
 
-   .breadcrumbs {
-    font-size: 14px;
-    color: #ffffff;
-    padding: 10px 15px;
-    background-color: #e0f2e9; /* Match background color */
-    display: flex; /* Flex for alignment */
-    align-items: center;
-    justify-content: center; /* Center align the breadcrumbs */
-}
-
-.breadcrumbs a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 5px;
-}
-
-.breadcrumbs a:hover {
-    text-decoration: underline;
-}
-
-.breadcrumbs span {
-    color: #333; /* Different color for the current page */
-}
-
-    .header {
-        background-color: #fff;
-        background-size: cover;
-        background-position: center;
-        padding: 50px 10px;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        position: relative;
-    }
-
-    .header h1 {
-        margin: 0;
-        font-size: 24px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
     .product-details {
         display: flex;
         flex-wrap: wrap;
@@ -124,7 +83,7 @@
     .product-details .text {
         color: white;
         flex: 1;
-        padding:60px;
+        padding: 60px;
         max-width: 50%;
         box-sizing: border-box;
     }
@@ -136,26 +95,58 @@
         margin-left: 150px; /* Space between text and image */
         margin-bottom: 80px;
         margin-top: 80px;
-    
-    }
-
-    .product-details .buttons {
-        margin-top: 20px;
     }
 
     .product-details .button {
         display: inline-block;
         padding: 10px 20px;
-        margin: 5px;
+        margin-top: 20px;
         background-color: green;
         color: white;
         text-decoration: none;
         border-radius: 5px;
         text-align: center;
+        font-weight: 500;
     }
 
     .product-details .button:hover {
         background-color: darkgreen;
+    }
+
+    .packaging-options {
+        padding: 20px 60px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .packaging {
+        text-align: center;
+        margin: 20px;
+        flex: 1;
+    }
+
+    .packaging img {
+        width: 200px; /* Larger images */
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .packaging h3 {
+        color: white;
+        margin: 10px 0 5px; /* Margin around title */
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .packaging p {
+        color: white;
+        margin: 0;
+        font-size: 14px;
     }
 
     /* Responsive styles */
@@ -193,17 +184,6 @@
             width: 25px; /* Ensure the hamburger menu is not too wide */
         }
 
-        .header {
-            background-image: none; /* Remove background image on mobile */
-            background-color: green; /* Use a solid color */
-            padding: 20px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 20px; /* Adjust font size for mobile */
-        }
-
         .product-details {
             flex-direction: column;
             align-items: center; /* Center content in column layout */
@@ -211,11 +191,9 @@
         }
 
         .product-details img {
-            padding-top: 0;
             width: 280px;
-            height: auto;
-            margin-bottom: 0;
-            margin-left: 0; /* Remove margin on mobile * /* Add space below image */
+            margin-bottom: 20px; /* Add space below image */
+            margin-left: 0; /* Remove margin on mobile */
         }
 
         .product-details .text {
@@ -224,18 +202,17 @@
             margin: 0; /* Remove margin on mobile */
         }
 
-        .product-details .buttons {
-            text-align: center; /* Center buttons on mobile */
+        .packaging-options {
+            padding: 20px;
+            flex-direction: column; /* Stack items vertically on mobile */
         }
 
-        .product-details .button {
-            width: 90%; /* Make buttons full width on mobile */
-            margin-bottom: 10px; /* Add space between buttons */
+        .packaging {
+            margin: 10px 0;
         }
 
-        .breadcrumbs {
-            text-align: center;
-            padding: 10px 15px; /* Adjust padding for mobile */
+        .packaging img {
+            width: 150px; /* Slightly smaller images on mobile */
         }
     }
 
@@ -289,25 +266,37 @@
     </div>
 </div>
 
-<!-- Breadcrumbs -->
-
-
-<!-- 
-<div class="breadcrumbs">
-    <a href="index.html">Home</a> &bull; 
-    <a href="products.html">Products</a> &bull; 
-    <span>DAP Fertilizer</span>
-</div> -->
-
+<!-- Product Details -->
 <div class="product-details">
-    <img src="img/dap.png" alt="DAP (18.46.0)">
+    <img src="img/map.png" alt="MAP Fertilizer">
     <div class="text">
-        <h2>46% Granular DAP</h2>
-        <p>Diammonium phosphate (DAP) is a widely used nitrogen-phosphorus fertilizer. It's highly effective in improving crop yield and enhancing soil nutrient content. DAP contains the highest concentration of phosphate among commonly used fertilizers.</p>
-        
+        <h2>MAP (Mono-Ammonium Phosphate)</h2>
+        <p>Mono-ammonium phosphate (MAP) is a binary fertilizer with a complex granule. Water-soluble, it dissolves rapidly to release nitrogen and phosphate. It has a pH of 5 and is comprised of 11% nitrogen, 52% phosphorus.</p>
+        <!-- Datasheet Button -->
+        <a href="map-datasheet.pdf" class="button" download>Download Datasheet</a>
     </div>
 </div>
 
+<!-- Packaging Options Section -->
+<div class="packaging-options">
+    <div class="packaging">
+        <img src="img/cuval.png" alt="50 kg Bag">
+        <h3>50 kg Bag</h3>
+        <p>Ideal for small-scale applications and home gardens.</p>
+    </div>
+    <div class="packaging">
+        <img src="img/bigbag.png" alt="500 kg Big Bag">
+        <h3>500 kg Big Bag</h3>
+        <p>Suitable for medium-scale agricultural use and larger farms.</p>
+    </div>
+    <div class="packaging">
+        <img src="img/bigbag.png" alt="1000 kg Big Bag">
+        <h3>1000 kg Big Bag</h3>
+        <p>Best for bulk usage in extensive agricultural operations.</p>
+    </div>
+</div>
+
+<!-- Footer -->
 <div class="footer">
     <div class="footer-content">
         <div>
@@ -323,7 +312,7 @@
             <h3>Follow Us</h3>
             <p><a href="#">Facebook</a></p>
             <p><a href="#">Twitter</a></p>
-            <p><a href="#">Instagram</a></p>.
+            <p><a href="#">Instagram</a></p>
         </div>
     </div>
     <p>&copy; 2024 AnfaFert. All rights reserved.</p>
