@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NPK Fertilizer</title>
+<title>Modern Fertilizer Products</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
     body {
         font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
-        background-image: linear-gradient(rgba(11, 39, 11, 0.7), rgba(6, 63, 6, 0.7));
+        background-color: #f4f4f4;
         color: #333;
         overflow-x: hidden; /* Prevent horizontal scroll */
     }
@@ -71,82 +71,152 @@
         transition: 0.4s;
     }
 
-    .product-details {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .product-details .text {
+    .hero {
+        background-image: linear-gradient(rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)), url('img/fertilizers.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 30px;
+        text-align: center;
         color: white;
-        flex: 1;
-        padding: 60px;
-        max-width: 50%;
-        box-sizing: border-box;
     }
 
-    .product-details img {
-        width: 450px;
+    .hero h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .hero .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .hero .cta-button:hover {
+        background-color: #006400;
+    }
+    .products-section {
+        padding: 50px 30px;
+        text-align: center;
+    }
+
+    .products-section h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .products-grid {
+    display: flex;
+    justify-content: center; /* Centers the grid horizontally */
+    flex-wrap: wrap; /* Ensures the cards wrap on smaller screens */
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 300px; /* Ensure the card doesn't grow too wide */
+    width: 100%; /* Allows flexibility for responsiveness */
+    text-align: center; /* Centers the content inside the card */
+}
+
+
+    .product-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .product-card img {
+        width: 100%;
         height: auto;
-        box-sizing: border-box;
-        margin-left: 150px; /* Space between text and image */
-        margin-bottom: 80px;
-        margin-top: 80px;
+        display: block;
     }
 
-    .product-details .button {
+    .product-card h3 {
+        font-size: 20px;
+        margin: 15px 0 5px;
+    }
+
+    .product-card p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .product-card .button {
         display: inline-block;
         padding: 10px 20px;
-        margin-top: 20px;
-        background-color: green;
+        background-color: #008000;
         color: white;
         text-decoration: none;
-        border-radius: 5px;
-        text-align: center;
         font-weight: 500;
+        border-radius: 5px;
+        margin-bottom: 15px;
     }
 
-    .product-details .button:hover {
-        background-color: darkgreen;
+    .product-card .button:hover {
+        background-color: #006400;
     }
 
-    .packaging-options {
-        padding: 20px 60px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .footer .footer-content {
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        margin-top: 20px;
         flex-wrap: wrap;
+        padding: 20px 30px;
+        text-align: left;
     }
 
-    .packaging {
-        text-align: center;
-        margin: 20px;
-        flex: 1;
-    }
-
-    .packaging img {
-        width: 200px; /* Larger images */
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .packaging h3 {
+    .footer a {
         color: white;
-        margin: 10px 0 5px; /* Margin around title */
-        font-size: 18px;
-        font-weight: 600;
+        text-decoration: none;
     }
 
-    .packaging p {
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .footer .newsletter {
+        margin-top: 20px;
+    }
+
+    .footer .newsletter input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    .footer .newsletter button {
+        padding: 10px 20px;
+        background-color: #008000;
         color: white;
-        margin: 0;
-        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .footer .newsletter button:hover {
+        background-color: #006400;
     }
 
     /* Responsive styles */
@@ -184,6 +254,17 @@
             width: 25px; /* Ensure the hamburger menu is not too wide */
         }
 
+        .header {
+            background-image: none; /* Remove background image on mobile */
+            background-color: green; /* Use a solid color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 20px; /* Adjust font size for mobile */
+        }
+
         .product-details {
             flex-direction: column;
             align-items: center; /* Center content in column layout */
@@ -191,9 +272,11 @@
         }
 
         .product-details img {
+            padding-top: 0;
             width: 280px;
-            margin-bottom: 20px; /* Add space below image */
-            margin-left: 0; /* Remove margin on mobile */
+            height: auto;
+            margin-bottom: 0;
+            margin-left: 0; /* Remove margin on mobile * /* Add space below image */
         }
 
         .product-details .text {
@@ -202,49 +285,19 @@
             margin: 0; /* Remove margin on mobile */
         }
 
-        .packaging-options {
-            padding: 20px;
-            flex-direction: column; /* Stack items vertically on mobile */
+        .product-details .buttons {
+            text-align: center; /* Center buttons on mobile */
         }
 
-        .packaging {
-            margin: 10px 0;
+        .product-details .button {
+            width: 90%; /* Make buttons full width on mobile */
+            margin-bottom: 10px; /* Add space between buttons */
         }
 
-        .packaging img {
-            width: 150px; /* Slightly smaller images on mobile */
+        .breadcrumbs {
+            text-align: center;
+            padding: 10px 15px; /* Adjust padding for mobile */
         }
-    }
-
-    .footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        position: relative;
-        width: 100%;
-    }
-
-    .footer .footer-content {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 10px 20px;
-        text-align: left;
-    }
-
-    .footer .footer-content div {
-        margin: 10px;
-        flex: 1;
-    }
-
-    .footer a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .footer a:hover {
-        text-decoration: underline;
     }
 </style>
 </head>
@@ -255,10 +308,6 @@
     <div class="logo">
         <img src="img/ANFAFERT.png" alt="AnfaFert Logo">
     </div>
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html" style="color: green;">Products</a></li>
-    </ul>
     <div class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
@@ -266,33 +315,28 @@
     </div>
 </div>
 
-<!-- Product Details -->
-<div class="product-details">
-    <img src="img/npk2.png" alt="NPK Fertilizer">
-    <div class="text">
-        <h2>NPK Fertilizer</h2>
-        <p>Fortified fertilizers are enhanced phosphate and nitrogen fertilizer blends with added micronutrients designed to feed degraded soil effectively. These fertilizers increase crop yields by giving plants the nutrients they need while protecting the soil.</p>
-        <!-- Datasheet Button -->
-        <a href="npk.pdf" class="button" download>Download Datasheet</a>
-    </div>
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Discover Our Premium Fertilizers</h1>
+    <p>High-quality fertilizers to boost your crop yield and enhance soil health.</p>
+    <a href="#" class="cta-button">Explore Products</a>
 </div>
 
-<!-- Packaging Options Section -->
-<div class="packaging-options">
-    <div class="packaging">
-        <img src="img/cuval.png" alt="50 kg Bag">
-        <h3>50 kg Bag</h3>
-        <p>Ideal for small-scale applications and home gardens.</p>
-    </div>
-    <div class="packaging">
-        <img src="img/bigbag.png" alt="500 kg Big Bag">
-        <h3>500 kg Big Bag</h3>
-        <p>Suitable for medium-scale agricultural use and larger farms.</p>
-    </div>
-    <div class="packaging">
-        <img src="img/bigbag.png" alt="1000 kg Big Bag">
-        <h3>1000 kg Big Bag</h3>
-        <p>Best for bulk usage in extensive agricultural operations.</p>
+<!-- Products Section -->
+<div class="products-section">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="img/npk.png" alt="DAP (18.46.0)">
+            <h3>5+15+15+S</h3>
+            <a href="npk.html" class="button">Learn More</a>
+        </div>
+        <div class="product-card">
+            <img src="img/npk.png" alt="DAP (18.46.0)">
+            <h3>14+28+14</h3>
+            <a href="npk.html" class="button">Learn More</a>
+        </div>
+        <!-- Add more product cards as needed -->
     </div>
 </div>
 
@@ -313,6 +357,11 @@
             <p><a href="#">Facebook</a></p>
             <p><a href="#">Twitter</a></p>
             <p><a href="#">Instagram</a></p>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
         </div>
     </div>
     <p>&copy; 2024 AnfaFert. All rights reserved.</p>
